@@ -1,4 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-st.write("pagina1")
+def load_datos():
+    df=pd.read_csv("")
+    return df
+
+df= load_datos()
+st.write(df)
